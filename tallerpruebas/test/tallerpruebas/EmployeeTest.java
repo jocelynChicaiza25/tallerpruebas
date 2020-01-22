@@ -49,7 +49,7 @@ public class EmployeeTest {
     public void testCsWorker() {
         System.out.println("cs");
         Employee instance = new Employee(400,"USD",10,Worker);
-        float expResult = 0.0F;
+        float expResult = 464.33334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
@@ -59,7 +59,7 @@ public class EmployeeTest {
     public void testCsWorker2() {
         System.out.println("cs");
         Employee instance = new Employee(400,"E",10,Worker);
-        float expResult = 0.0F;
+        float expResult = 444.33334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
@@ -70,7 +70,7 @@ public class EmployeeTest {
     public void testCsSupervisor() {
         System.out.println("cs");
         Employee instance = new Employee(400,"USD",10,Supervisor);
-        float expResult = 0.0F;
+        float expResult = 467.83334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
@@ -80,7 +80,7 @@ public class EmployeeTest {
     public void testCsSupervisor2() {
         System.out.println("cs");
         Employee instance = new Employee(400,"E",10,Supervisor);
-        float expResult = 0.0F;
+        float expResult = 447.83334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
@@ -90,7 +90,7 @@ public class EmployeeTest {
     public void testCsManager() {
         System.out.println("cs");
         Employee instance = new Employee(400,"USD",10,Manager);
-        float expResult = 0.0F;
+        float expResult = 471.33334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
@@ -100,7 +100,7 @@ public class EmployeeTest {
     public void testCsManager2() {
         System.out.println("cs");
         Employee instance = new Employee(400,"E",10,Manager);
-        float expResult = 0.0F;
+        float expResult = 451.33334F;
         float result = instance.cs();
         assertEquals(expResult, result, 0.0);
         
