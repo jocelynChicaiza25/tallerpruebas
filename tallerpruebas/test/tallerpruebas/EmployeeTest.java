@@ -85,6 +85,25 @@ public class EmployeeTest {
         assertEquals(expResult, result, 0.0);
         
     }
+    public void testCsSupervisor3() {
+        System.out.println("cs");
+        Employee instance = new Employee(400,"USD",10,Supervisor);
+        //float expResult = 467.83334F;
+        float expResult = 467.83F;
+        float result = instance.cs();
+        assertEquals(expResult, result, 0.02);
+        
+    }
+    //test para employee Supervisor diferente de USD
+     @Test
+    public void testCsSupervisor4() {
+        System.out.println("cs");
+        Employee instance = new Employee(400,"E",10,Supervisor);
+        float expResult = 447.83334F;
+        float result = instance.cs();
+        assertEquals(expResult, result, 0.001);
+        
+    }
       //test para employee Manager con USD
     @Test
     public void testCsManager() {
@@ -173,7 +192,26 @@ public class EmployeeTest {
         float result = instance.CalculateYearBonus();
         assertEquals(expResult, result, 0.0);
     }
-    
+      //test calculate bonus para employee Manager con  USD
+    @Test
+    public void testCalculateYearBonusManager3() {
+        System.out.println("CalculateYearBonus");
+        Employee instance = new Employee(485,"USD",10,Manager);
+        float expResult = 871.0F;
+        float result = instance.CalculateYearBonus();
+        assertEquals(expResult, result, 0.05);
+        
+    }
+     
+    //test calculate bonus para employee Manager diferente de USD
+    @Test
+    public void testCalculateYearBonusManager4() {
+        System.out.println("CalculateYearBonus");
+        Employee instance = new Employee(485,"E",10,Manager);
+        float expResult = 846.75F;
+        float result = instance.CalculateYearBonus();
+        assertEquals(expResult, result, 0.005);
+    }
     
   
 }
